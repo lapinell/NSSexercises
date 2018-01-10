@@ -23,3 +23,24 @@ header ul li {
 a .disabled {
     color: purple;
 }
+
+/* Make the "I'm red" text colored red.
+Make the "I'm blue" text colored blue.
+The sibling h4 of the red element should have a background color of red.
+The sibling h4 of the blue element should have background color of blue. */
+
+div.parent > div > div:first-child {
+    color: red;
+}
+
+div.parent > div > h4:nth-child(2) {
+    background-color: red;
+}
+
+div.parent > div > div:nth-child(3) {
+    color: blue;
+}
+
+div.parent > div > h4:nth-child(4) {
+    background-color: blue;
+}
