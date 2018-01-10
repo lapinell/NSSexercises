@@ -8,3 +8,18 @@ header ul li {
     list-style: none;
     padding-left: 1em;
 }
+
+/*4. Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor tag. If inside an anchor, it should be colored purple.
+5. Any text inside an element with a class of "active" should be colored yellow.*/
+
+.disabled {
+    color: grey;
+}
+
+.active {
+    color: yellow;
+}
+
+a .disabled {
+    color: purple;
+}
