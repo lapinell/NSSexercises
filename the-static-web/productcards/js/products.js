@@ -83,7 +83,7 @@ for (i=0; i<products.length; i++) {
                         </header>
                         <section class="card_section product_description">
                             <img src="images/` + products[i].url +`" alt="#">
-                            <h3>Product description:</h3>` + products[i].description +`</p>
+                            <h3>Product description</h3>` + products[i].description +`</p>
                             <p><strong>` + products[i].availablility +`</strong></p>
                         </section>
                         <section class="card_section product_specs">
