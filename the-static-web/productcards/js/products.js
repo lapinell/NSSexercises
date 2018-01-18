@@ -2,8 +2,8 @@ var products = [
     {
     url: "octopus-sticker.jpg",
     name: "OctoCutie",
-    description: "Octopus sticker",
-    availablility: "available",
+    description: "OctoCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -14,8 +14,8 @@ var products = [
     {
     url: "cactus-sticker.jpg",
     name: "CactiCutie",
-    description: "Cactus sticker",
-    availablility: "available",
+    description: "CactiCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -26,8 +26,8 @@ var products = [
     {
     url: "panda-sticker.jpg",
     name: "PandaCutie",
-    description: "Panda sticker",
-    availablility: "available",
+    description: "PandaCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -38,8 +38,8 @@ var products = [
     {
     url: "pumpkin-sticker.jpg",
     name: "PumpkiCutie",
-    description: "Pumpkin sticker",
-    availablility: "available",
+    description: "PumpkiCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -50,8 +50,8 @@ var products = [
     {
     url: "star-sticker.jpg",
     name: "TinkliCutie",
-    description: "Star sticker",
-    availablility: "available",
+    description: "TinkliCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -61,9 +61,9 @@ var products = [
     },
     {
     url: "ram-sticker.jpg",
-    name: "SheepishCutie",
-    description: "Ram sticker",
-    availablility: "available",
+    name: "SheepiCutie",
+    description: "SheepiCutie is a removable, individually die-cut vinyl. Ideal for smooth flat surfaces like laptops, journals, windows, etc. 1/8th of an inch white border around each design.",
+    availablility: "Available",
     size: "1.5 in x 1.5 in",
     weight: "less than an ounce",
     expiration: "sticky side lasts forever",
@@ -83,20 +83,20 @@ for (i=0; i<products.length; i++) {
                         </header>
                         <section class="card_section product_description">
                             <img src="images/` + products[i].url +`" alt="#">
-                            <p>Product description:` + products[i].description +`</p>
-                            <p>Availability: ` + products[i].availablility +`</p>
+                            <h3>Product description:</h3>` + products[i].description +`</p>
+                            <p><strong>` + products[i].availablility +`</strong></p>
                         </section>
                         <section class="card_section product_specs">
                             <h3>Specifications</h3>
-                            <p>Size: ` + products[i].size +`</p>
-                            <p>Weight: ` + products[i].weight +`</p>
+                            <p><strong>Size:</strong> ` + products[i].size +`</p>
+                            <p><strong>Weight:</strong> ` + products[i].weight +`</p>
                             <footer>The ` + products[i].expiration +`</footer>
                         </section>
                         <section class="card_section product_pricing">
                             <h3>Pricing</h3>
-                            <p>Individual Pricing: ` + products[i].priceInd +` </p>
-                            <p>Business Pricing: ` + products[i].priceBus +`</p>
-                            <p>Wholesale Pricing:` + products[i].priceWhl +` </p>
+                            <p><strong>Individual Pricing:</strong> ` + products[i].priceInd +` </p>
+                            <p><strong>Business Pricing:</strong> ` + products[i].priceBus +`</p>
+                            <p><strong>Wholesale Pricing:</strong>` + products[i].priceWhl +` </p>
                         </section>
                     </article>`
 
