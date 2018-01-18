@@ -1,0 +1,30 @@
+/* This is a mobile first styles web page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgoldenrodyellow;
+    color: #444;
+     text-align: center;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card Styling */
+
+.card {
+    margin: 50px 25px;
+    padding: 25px;
+    background: white;
+    border: 1px solid lightblue;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px grey;
+}
