@@ -39,14 +39,14 @@ for (let i = 0; i < scores.length; i++) {
 // How many of each grade? Accomplish this with a for..in loop.
 
 for (var prop in grades) {
-    console.log(`grades.${prop} = ${grades[prop]}`); 
+    console.log(`${prop} = ${grades[prop]}`); 
 }
 ////Result is:
-// grades.A = 2
-// grades.B = 3
-// grades.C = 4
-// grades.D = 3
-// grades.F = 3
+// A = 2
+// B = 3
+// C = 4
+// D = 3
+// F = 3
 
 // What is the lowest score? Sort the array and find out.
 var scoreLowToHigh = scores.sort(function(a,b){return a-b}); //sort array from lowest to highest value
@@ -59,8 +59,9 @@ var highestScore = scoreLowToHigh[0]; //then the value at the 0-index would be t
 console.log("The highest score is " + highestScore); //pring it
 
 // Which grade had the most students achieve it? Use an if statment, and a currentGradeCount variable, in your for..in loop to see if the current grade's value is higher than the last one.
+  var listGrades = Object.values(grades);
 
-
-
+  console.log( Math.max(...listGrades) );
 
 // Which grade had the fewest students achieve it?
+    console.log( Math.min(...listGrades) );
