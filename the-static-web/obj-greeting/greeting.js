@@ -7,9 +7,9 @@ const CardMaker = {
     makeFrontMessage: function(string) {
       return `<h2>${string}</h2>`
     },
-
+    
     makeInsideMessage: function(string) {
-        return `<h3>${string}</h2>`
+        return `<h3>${string}</h3>`
     }
   }
   
@@ -19,13 +19,13 @@ const CardMaker = {
   
 
 function Card (frontMessage, insideMessage) {
-    this.frontMessage = frontMessage;
-    this.insideMessage = insideMessage;
+    this.frontMessage = CardMaker.makeFrontMessage( frontMessage );
+    this.insideMessage = CardMaker.makeFrontMessage( insideMessage );
 }
 
-let BirthdayCard1 = new Card( CardMaker.makeFrontMessage("Happy Birthday!"), CardMaker.makeInsideMessage("Stupid."));
+let BirthdayCard1 = new Card( "Happy Birthday!", "Stupid.");
 
-let ValentinesCard1 = new Card ( CardMaker.makeFrontMessage("Happy Valentine's Day"), CardMaker.makeInsideMessage ("Said  no one ever."));
+let ValentinesCard1 = new Card ( "Happy Valentine's Day", "Said  no one ever.");
 
 
 
